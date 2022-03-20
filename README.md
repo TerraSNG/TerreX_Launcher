@@ -11,4 +11,4 @@
 - Легко создавать свои собственные паки ; И многое другое!
 
 # [Версия для ПК](https://github.com/TerraSNG/TerreX)
-# [Версия для Android]()
+# [Версия для Android](https://github.com/TerraSNG/TerreX_Launcher/blob/main/README.md)
