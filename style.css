@@ -1,0 +1,56 @@
+body {
+  font-family: 'Andy', sans-serif; /* Устанавливаем шрифт */
+  background-image: url(https://cdn.glitch.global/5ea3e6d9-bcff-4a2f-a596-5f74ab6cb987/d8b2afl-ffbcf894-54f9-4359-ac48-3f6050dc427d.jpg?v=1647794099582); /* Выбираем фон */
+  color: white; /* Устанавливаем белый цвет текста */
+  text-align: center; /* Центрируем всё */
+  padding: 0; /* Удаляем паддинг */
+  margin: 0; /* Удаляем маргин */
+  -webkit-background-size: cover; /* Растягиваем бг для браузеров Webkit */
+  -moz-background-size: cover; /* Растягиваем бг для мазилы */
+  -o-background-size: cover; /* Растягиваем бг для оперы */
+  background-size: cover; /* Растягиваем бг */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+@font-face {
+  font-family: 'Andy';  /* Устанавливаем шрифт */
+  src: url(https://cdn.glitch.global/5ea3e6d9-bcff-4a2f-a596-5f74ab6cb987/font.ttf?v=1647785627739); /* Получаем шрифт из ассетов */
+}
+.title {
+  font-size: 50px; /* Устанавливаем размер шрифта */
+  margin: 5px; /* Отступ от верхнего края */
+}
+.menu {
+  display: flex; /* Устанавливаем как flex элемент */
+  flex-direction: row; /* Горизонтальное отображение справа налево */
+  flex-wrap: wrap; /* На маленьких экранах пункты, которые не помещаются, будут перенесены */
+  justify-content: center; /* Центрируем меню */
+  gap: 3vh; /* Отступ между элементами */
+}
+.menuElement {
+  text-decoration: none; /* Удаляем нижнее подчёркивание у гиперссылок */
+  cursor: pointer; /* Устанавливаем курсор */
+}
+.menuElement:hover {
+  animation: flip;
+  animation-duration: 0.5s;
+}
+.active {
+  color: cyan; /* Активный пункт меню делаем голубым */
+}
+button {
+  width: 90%; /* Для красоты */
+  height: 30px; /* Для красоты */
+  border-radius: 50px; /*Округление углов */
+  border: none; /* Удаляем границу */
+  margin-bottom: 10px; /* Чтобы не было ощущения приклеенных кнопок */
+  background-color: #66CDAA; /* Цвет бг*/
+  color: white; /*Цвет текста*/
+  cursor: pointer; /* Установка курсора */
+  font-family: 'Andy', sans-serif; /* Устанавливаем шрифт */
+}
+button:hover {
+  background-color: #00CED1; /* При ховере устанавливаем цвет бг */
+  animation: flip;
+  animation-duration: 1s;
+}
